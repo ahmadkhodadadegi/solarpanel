@@ -10,7 +10,7 @@ frontend:
         - cd solarpanel
         - npm install 
   artifacts:
-    baseDirectory: solarpanel
+    baseDirectory: ./solarpanel/build
     files:
       - '**/*'
   cache:
