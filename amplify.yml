@@ -15,7 +15,7 @@ frontend:
     #         - cd dist
     #         - ls
   artifacts:
-    baseDirectory: dist
+    baseDirectory: solar_panel
     files:
       - '**/*'
   cache:
