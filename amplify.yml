@@ -8,8 +8,6 @@ frontend:
         - npm install
     build:
       commands:
-        - npm install -g <package>
-        - <package> deploy
         - npm run build
     postBuild:
         commands:
