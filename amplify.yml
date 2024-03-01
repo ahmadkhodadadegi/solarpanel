@@ -3,14 +3,14 @@ frontend:
   phases:
     build:
       commands:
-         -npm run build
+        - npm run build
          
     preBuild:
       commands:
-        - npm ci
+        - cd frontend
         - npm install 
   artifacts:
-    baseDirectory: dist
+    baseDirectory: ./frontend/build
     files:
       - '**/*'
   cache:
