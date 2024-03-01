@@ -11,6 +11,7 @@ frontend:
     preBuild:
       commands:
         - npm ci
+        - npm install 
   artifacts:
     baseDirectory: dist
     files:
