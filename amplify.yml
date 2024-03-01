@@ -8,12 +8,12 @@ frontend:
          // After running a production build, delete the files
          - rm -f node_modules/@swc/core-linux-x64-gnu/swc.linux-x64-gnu.node
          - rm -f node_modules/@swc/core-linux-x64-musl/swc.linux-x64-musl.node
-    postBuild:
-        commands:
-            - ls
-            - pwd
-            - cd dist
-            - ls
+    # postBuild:
+    #     commands:
+    #         - ls
+    #         - pwd
+    #         - cd dist
+    #         - ls
   artifacts:
     baseDirectory: dist
     files:
