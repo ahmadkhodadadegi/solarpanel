@@ -1,9 +1,9 @@
 {
-  "name": "notus-nextjs",
+  "name": "solarpanel",
   "homepage": "https://greenroute.ir",
   "version": "1.1.0",
   "description": "Solar Energy",
-  "repository": "https://github.com/creativetimofficial/notus-nextjs",
+  "repository": "https://github.com/ahmadkhodadadegi/solarpanel",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
