@@ -1,1 +1,1 @@
-echo "for project mohammad"
+for project mohammad
