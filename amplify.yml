@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd solarpanel
+        # - cd solarpanel
         - rm -rf node_modules
         # - npm install
         - yarn install
