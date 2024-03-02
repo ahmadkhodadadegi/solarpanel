@@ -5,10 +5,10 @@ frontend:
       commands:
         - npm run build
          
-    preBuild:
-      commands:
-        # - cd solarpanel
-        - npm install 
+    # preBuild:
+    #   commands:
+    #     - cd solarpanel
+    #     - npm install 
   artifacts:
     baseDirectory: ./solarpanel
     files:
