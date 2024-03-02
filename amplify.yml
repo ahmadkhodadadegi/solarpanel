@@ -13,5 +13,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - build/cache/**/*
       - node_modules/**/*
