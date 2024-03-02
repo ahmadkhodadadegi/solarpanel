@@ -7,10 +7,10 @@ frontend:
          
     preBuild:
       commands:
-        - cd solarpanel
+        # - cd solarpanel
         - npm install 
   artifacts:
-    baseDirectory: ./solarpanel/build
+    baseDirectory: ./solarpanel
     files:
       - '**/*'
   cache:
