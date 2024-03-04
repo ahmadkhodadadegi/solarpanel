@@ -26,11 +26,12 @@ frontend:
    phases:
       build:
          commands:
-            - yarn build
+          - ls
+          - rm -rf node_modules
+          - yarn install --production #--ignore-optional #--verbose
+          - mv /$_FRONTEND/$_FRONTEND_VERSION /deploy # stage files for deployment
     artifacts:
-       baseDirectory: ./
+       baseDirectory: /deploy/build
        files:
           - '**/*'
-    cache:
-       paths:
-         - dist/**/*
+    
