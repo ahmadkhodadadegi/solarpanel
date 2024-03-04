@@ -30,8 +30,8 @@ frontend:
           - rm -rf node_modules
           - yarn install --production #--ignore-optional #--verbose
           - mv /$_FRONTEND/$_FRONTEND_VERSION /deploy # stage files for deployment
-    artifacts:
-       baseDirectory: /deploy/build
-       files:
+   artifacts:
+      baseDirectory: /deploy/build
+      files:
           - '**/*'
     
