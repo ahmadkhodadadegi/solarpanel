@@ -1,21 +1,36 @@
+# version: 1
+# frontend:
+#   phases:
+#     preBuild:
+#       commands:
+#         - ls -la
+#         # - cd solarpanel
+#         - rm -rf node_modules
+#         # - npm install
+#         - yarn install
+#         - npm ci
+#     build:
+#       commands:
+#         - npm run build
+#   artifacts:
+#     baseDirectory: dist
+#     files:
+#       - '**/*'
+#   cache:
+#     paths:
+#       - node_modules/**/*
+#       - .cache/**/*
+
 version: 1
 frontend:
-  phases:
-    preBuild:
-      commands:
-        - ls -la
-        # - cd solarpanel
-        - rm -rf node_modules
-        # - npm install
-        - yarn install
-        - npm ci
-    build:
-      commands:
-        - npm run build
-  artifacts:
-    baseDirectory: dist
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+   phases:
+      build:
+         commands:
+            - yarn build
+    artifacts:
+       baseDirectory: public
+       files:
+          - '**/*'
+    cache:
+       paths:
+         - public/**/*
