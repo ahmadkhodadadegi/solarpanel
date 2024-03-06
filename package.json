@@ -29,7 +29,10 @@
     "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+      "rules": {
+          "jsx-a11y/accessible-emoji": "off"
+      }
   },
   "browserslist": {
     "production": [
