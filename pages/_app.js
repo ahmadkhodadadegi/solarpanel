@@ -27,38 +27,38 @@ Router.events.on("routeChangeError", () => {
 });
 
 export default class MyApp extends App {
-  componentDidMount() {
-    let comment = document.createComment('');
-    document.insertBefore(comment, document.documentElement);
-  }
-  static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {};
+  // componentDidMount() {
+  //   let comment = document.createComment('');
+  //   document.insertBefore(comment, document.documentElement);
+  // }
+  // static async getInitialProps({ Component, router, ctx }) {
+  //   let pageProps = {};
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
+  //   if (Component.getInitialProps) {
+  //     pageProps = await Component.getInitialProps(ctx);
+  //   }
 
-    return { pageProps };
-  }
-  render() {
-    const { Component, pageProps } = this.props;
+  //   return { pageProps };
+  // }
+  // render() {
+  //   const { Component, pageProps } = this.props;
 
-    const Layout = Component.layout || (({ children }) => <>{children}</>);
+  //   const Layout = Component.layout || (({ children }) => <>{children}</>);
 
-    return (
-      <React.Fragment>
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-          <title>WVPP</title>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-        </Head>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </React.Fragment>
-    );
-  }
+  //   return (
+  //     <React.Fragment>
+  //       <Head>
+  //         <meta
+  //           name="viewport"
+  //           content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  //         />
+  //         <title>WVPP</title>
+  //         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  //       </Head>
+  //       <Layout>
+  //         <Component {...pageProps} />
+  //       </Layout>
+  //     </React.Fragment>
+  //   );
+  // }
 }
